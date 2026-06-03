@@ -38,7 +38,7 @@ const ChatCard = ({
           <div className="text-md font-semibold">{username}</div>
           <div className="text-xs text-[#737373]">{timestamp}</div>
         </div>
-        <div className="text-[#A3A3A3] text-sm w-3/4">{lastMessage}</div>
+        <div className="text-[#A3A3A3] text-sm w-3/4 max-h-10 overflow-hidden">{lastMessage}</div>
       </div>
     </div>
   );

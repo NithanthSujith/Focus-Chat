@@ -15,7 +15,7 @@ const SIDEBAR_ITEMS = [
   },
   {
     icon: <PiNetwork size={20} />,
-    title: "Channels",
+    title: "Podules",
     link: "/chat",
   },
   {
@@ -40,7 +40,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
   return (
     <div
       className={clsx(
-        "w-20 h-screen border-r border-r-[#1C1B1B]/70 text-white p-5 flex flex-col justify-between relative transition-all duration-200",
+        "w-20 h-screen border-r border-r-[#1C1B1B]/70 text-white p-5 flex flex-col justify-between relative transition-all duration-400",
         isSidebarOpen && "w-65",
       )}
     >
@@ -78,7 +78,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) => {
           {SIDEBAR_ITEMS.map((item, index) => (
             <div
               className={clsx(
-                "flex items-center gap-3 rounded-md h-10 justify-between overflow-hidden group hover:bg-[#A855F7]/10 cursor-pointer transition-all duration-200",
+                "flex items-center gap-3 rounded-md h-10 justify-between overflow-hidden group hover:bg-[#A855F7]/10 cursor-pointer transition-all duration-200 relative",
                 activeTab === index && "bg-[#A855F7]/10",
               )}
               onClick={() => {
